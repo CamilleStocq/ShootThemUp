@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "name": "mouvement",
+    "maps": [
+        {
+            "name": "movement",
+            "id": "b75da2e0-1ac6-4098-b0d5-f1ae1e256078",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "aae6e99a-8084-4bc4-baff-fc2f9147f1ec",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d9781669-ccd9-4b12-b6ce-39fd9b8c8e98",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59586c2c-0870-434e-8086-e31d497712bb",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5f51ae8-b462-4cd4-8018-04331b9dac45",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ac544c1-5473-4b71-b0ce-66ef742cf991",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

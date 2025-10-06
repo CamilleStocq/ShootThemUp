@@ -6,18 +6,13 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ennemy"))
         {
-            Destroy(gameObject);
-
-            GameObject[] tousLesObjets = FindObjectsOfType<GameObject>();
-
-            foreach (GameObject obj in tousLesObjets)
+            GameObject heart = GameObject.FindWithTag("Destroy");
+            if (heart != null)
             {
-                if (obj.CompareTag("Destroy"))
-                {
-                    Destroy(obj);
-                    return;
-                }
+                Destroy(heart); // détruit les vies
             }
+
+            Destroy(collision.gameObject); // détruit l'ennemi
         }
     }
 }

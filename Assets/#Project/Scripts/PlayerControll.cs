@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerControll : MonoBehaviour
 {
     [SerializeField] private float speed;
-
+    
     void Update()
     {
         Keyboard keyboard = Keyboard.current;
@@ -35,6 +35,5 @@ public class PlayerControll : MonoBehaviour
 
         Vector3 move = new Vector3(moveX, 0f, moveZ).normalized;
         transform.position += move * speed * Time.deltaTime;
-
     }
 }

@@ -18,8 +18,8 @@ public class Shoot : MonoBehaviour
     void ShootBullet()
     {
         GameObject bullet = Instantiate(bulletPrefab,ShootingBall.position,ShootingBall.rotation );
-        Vector3 mousePos = Input.mousePosition; // viser avec le pointeur de la souris
-
         bullet.GetComponent<Rigidbody>().linearVelocity = ShootingBall.forward * bulletSpeed;
+
+        // Vector3 mousePos = Input.mousePosition; // viser avec le pointeur de la souris
     }
 }

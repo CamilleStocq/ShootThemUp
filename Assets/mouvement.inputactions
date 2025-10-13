@@ -62,6 +62,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "shoot",
+            "id": "a3f6babf-d1c8-48e9-a378-400ff7e0180c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "abd7c02f-2acb-4bfe-b798-bea4625f804c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1e275b63-0c84-435c-8e4c-99501e70be8e",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

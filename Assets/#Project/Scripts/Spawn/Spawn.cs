@@ -7,7 +7,7 @@ public class Spawn : MonoBehaviour
     [SerializeField] private float cooldown = 0.7f; // tous les combien de temps il part
     [SerializeField] private GameObject prefab;
     [SerializeField] private Transform target; // le point d'arriver
-    Pool2<EnnemyBehaviour> pool;
+    Pool<EnnemyBehaviour> pool;
 
     public float minHeight = 0f; //min hauteur
     public float maxHeight = 10f; // max hauteur

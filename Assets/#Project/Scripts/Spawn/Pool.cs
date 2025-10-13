@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pool2<T>
+public class Pool<T>
 where T : IPoolClient // le type de T doit avoir implementer IPoolClint
 {
     private GameObject anchor;
@@ -10,7 +10,7 @@ where T : IPoolClient // le type de T doit avoir implementer IPoolClint
     private Queue<T> queue = new();
     private int batch;
 
-    public Pool2(GameObject anchor, GameObject prefab, int batch)
+    public Pool(GameObject anchor, GameObject prefab, int batch)
     {
         this.anchor = anchor;
         this.prefab = prefab;

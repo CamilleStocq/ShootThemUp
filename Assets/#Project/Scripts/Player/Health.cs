@@ -26,9 +26,9 @@ public class Health : MonoBehaviour
 
             StartCoroutine(InvicibleCoroutine());
 
-            if (heart == null)
+            if (heart == null) // plus de vie 
             {
-                SceneManager.LoadScene(sceneName);
+                SceneManager.LoadScene(sceneName); // donc on change de scene 
             } 
         }
     }
@@ -37,7 +37,7 @@ public class Health : MonoBehaviour
     {
         IsInvicible = true;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         IsInvicible = false;
     }
 

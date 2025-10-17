@@ -1,8 +1,11 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+    [SerializeField] private string sceneName;
     private bool IsInvicible = false;
 
     void Start()
@@ -22,6 +25,11 @@ public class Health : MonoBehaviour
             Destroy(collision.gameObject); // détruit l'ennemi
 
             StartCoroutine(InvicibleCoroutine());
+
+            if (heart == null)
+            {
+                SceneManager.LoadScene(sceneName);
+            } 
         }
     }
 
@@ -32,4 +40,5 @@ public class Health : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         IsInvicible = false;
     }
+
 }
